@@ -4,6 +4,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth"
+      
     });
   });
 });
+// Toggle mobile navigation menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+

@@ -10,23 +10,28 @@
 <body>
   <header>
     <nav>
-      <h1 class="logo">MY<span>PORTFOLIO</span></h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Work</a></li>
+  <h1 class="logo">MY<span>PORTFOLIO</span></h1>
 
-      </ul>
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#work">Work</a></li>
+  </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home" class="section home">
     <div class="home-content">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVK8_Pnbw_TTJPPQclAn_cQgJzUj9lW5zHGQ&s" alt="Sakshi Garg">
+      <img src="data:image/jpeg;base64,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" alt="Sakshi Garg">
       <h2><span>Hi, I'm Sakshi Garg</span></h2>
       <p>A B.Tech student specializing in AI & Data Science, passionate about Web Development and Cybersecurity.</p>
       <a href="#contact" class="btn">Contact</a>
@@ -96,15 +101,19 @@
       <div class="project-card">
         <h3>100 Days Coding Challenge</h3>
         <p>Practiced daily coding and problem-solving to strengthen core programming skills under Bhavesh Sir’s guidance.</p>
+        <a href="https://www.linkedin.com/in/sakshi-garg-a46b91348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Link</a>
       </div>
       <div class="project-card">
         <h3>Prodigy InfoTech Internship</h3>
+
         <p>Developed web applications using HTML, CSS, and JS. Learned teamwork and real-world project management.</p>
+      <a href="https://github.com/sakshi633">Link</a>
       </div>
       <div class="project-card">
         <h3>Personal Portfolio Website</h3>
         <p>Designed and developed this portfolio website to showcase my skills and projects.</p>
-    </div>
+      <a href="https://github.com/sakshi633">Link</a>
+      </div>
   </section>
 
   <!-- Contact Section -->
